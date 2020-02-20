@@ -1,0 +1,46 @@
+Instructions for Excel Application:
+
+The Input File:
+	- The input file can be named anything just make sure the sheet is named "Input"
+	- A2 must be filled with the authors name
+	- B2 must be filled with the first pay date
+	- C2 must be filled with the last pay date
+	- Inputs:
+		- Row 5 must be the first input
+		- The input is ordered as follows:
+			A*: EE#
+			B*: Name
+			C*: Position
+			D*: Process Level
+			E*: Eff Date
+			F*: Reason
+			G#:Union
+			H: Action Taken
+			I: Sick Bank Grant Start Date
+			J: Sick Bank Grant End Date
+			K: Unearned Leave Start Date
+			L: Unearned Leave End Date
+			M: Unpaid Start Date
+			N: Unpaid End Date
+			O*: Current Salary Start Date
+			P*: Current Salary End Date
+			Q*: Current Salary (Annual)
+			R#: Current Salary Contract Days
+			S#: Current Salary Daily Hours
+		- An infinite number of subsequent salaries maybe input in the row, after column S but have to follow the 5 input structure: 
+				Start Date, End Date, Salary(Annual), Contract Days, Daily Hours
+			~ Contract Days and Daily Hours will assume the Current Salary values if left blank but, be sure to leave blank spaces for them
+
+		- * required input, # maybe required (see Position Column Header)
+
+Position Column:
+	- If in this column you put:
+		Inclusion Helper,
+		New Teacher,
+		Custodian,
+		10m[position_name],
+		12m[position_name]
+	Daily Hours, Contract Days, and Union are assumed, leaving these columns blank will use default values although if you put in values it will override the default values.
+
+
+
